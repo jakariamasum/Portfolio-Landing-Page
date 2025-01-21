@@ -1,9 +1,11 @@
+import Header from "@/components/Header/Header";
 import styles from "./page.module.css";
 
 const Home = () => {
   return (
     <div className={styles.container}>
-      <main>init</main>
+      <Header />
+      <main></main>
     </div>
   );
 };
