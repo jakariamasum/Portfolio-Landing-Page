@@ -9,13 +9,6 @@
   padding: 0 20px;
 }
 
-.title {
-  text-align: center;
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 48px;
-}
-
 .content {
   display: flex;
   flex-wrap: wrap;
@@ -55,12 +48,6 @@
   max-width: 600px;
 }
 
-.description {
-  color: #666;
-  line-height: 1.6;
-  margin-bottom: 32px;
-}
-
 .skills {
   display: flex;
   flex-direction: column;
@@ -94,9 +81,5 @@
 
   .imageWrapper {
     margin-bottom: 40px;
-  }
-
-  .title {
-    font-size: 30px;
   }
 }

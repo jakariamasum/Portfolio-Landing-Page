@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./about.module.css";
 import image from "../../assests/image.png";
+import Title from "../ui/Title";
 
 const About = () => {
   const skills = [
@@ -13,7 +14,6 @@ const About = () => {
   return (
     <section id="about" className={styles.about}>
       <div className={styles.container}>
-        <h2 className={styles.title}>About Me</h2>
         <div className={styles.content}>
           <div className={styles.imageWrapper}>
             <div className={styles.imageDecoration}></div>
@@ -26,11 +26,10 @@ const About = () => {
             />
           </div>
           <div className={styles.info}>
-            <p className={styles.description}>
-              Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa
-              nibh lectus netus in. Aliquet donec morbi convallis pretium.
-              Turpis tempus pharetra
-            </p>
+            <Title
+              title="About Me"
+              description="Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam tortor nam diam tellus"
+            />
             <div className={styles.skills}>
               {skills.map((skill) => (
                 <div key={skill.name} className={styles.skill}>

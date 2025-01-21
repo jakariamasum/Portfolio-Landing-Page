@@ -1,13 +1,13 @@
+import Title from "../ui/Title";
 import styles from "./contact.module.css";
 
 const Contact = () => {
   return (
     <section id="contact" className={styles.contact}>
-      <h2 className={styles.title}>Lets Design Together</h2>
-      <p className={styles.description}>
-        Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh
-        lectus netus in.
-      </p>
+      <Title
+        title="Let's Design Together"
+        description="Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam tortor nam diam tellus"
+      />
 
       <form className={styles.form}>
         <input

@@ -5,6 +5,7 @@ import Image from "next/image";
 import styles from "./projects.module.css";
 
 import project1 from "../../assests/project1.png";
+import Title from "../ui/Title";
 
 const categories = [
   "All",
@@ -44,11 +45,10 @@ const Projects = () => {
 
   return (
     <section id="projects" className={styles.projects}>
-      <h2 className={styles.title}>My Projects</h2>
-      <p className={styles.description}>
-        Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam tortor
-        nam diam tellus.
-      </p>
+      <Title
+        title="My Projects"
+        description="Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam tortor nam diam tellus"
+      />
 
       <div className={styles.categories}>
         {categories.map((category) => (

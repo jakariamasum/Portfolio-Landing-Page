@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import styles from "./testimonials.module.css";
 import image from "../../assests/image.png";
+import Title from "../ui/Title";
 
 const testimonials = [
   {
@@ -21,7 +22,10 @@ const Testimonials = () => {
 
   return (
     <section id="testimonials" className={styles.testimonials}>
-      <h2 className={styles.title}>Testimonials</h2>
+      <Title
+        title="Testimonials"
+        description="Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam tortor nam diam tellus"
+      />
 
       <div className={styles.slider}>
         <div className={styles.testimonial}>

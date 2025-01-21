@@ -4,6 +4,7 @@ import app from "../../assests/app.png";
 import graphic from "../../assests/graphic.png";
 import ui from "../../assests/ui.png";
 import Image from "next/image";
+import Title from "../ui/Title";
 
 const Services = () => {
   const services = [
@@ -35,11 +36,10 @@ const Services = () => {
 
   return (
     <section id="services" className={styles.services}>
-      <h2 className={styles.title}>Services</h2>
-      <p className={styles.description}>
-        Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh
-        lectus netus in.
-      </p>
+      <Title
+        title="Services"
+        description="Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam tortor nam diam tellus"
+      />
       <div className={styles.grid}>
         {services.map((service) => (
           <div key={service.title} className={styles.card}>
